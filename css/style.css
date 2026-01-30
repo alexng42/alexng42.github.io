@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+:root {
+    --base-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #03b1fc;
+    --secondary-color: #fca503;
+    --color-1: #0084ff;
+    --color-2: #00d9ff;
+    --color-3: #00d9ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Play", sans-serif;
+    font-size: larger;
+    color: var(--text-color);
+}
+
+body {
+    padding: 1em;
+    background-color: var(--base-color);
+}
+
+h1, h2, h3 {
+    font-family: "Monofett", monospace;
+}
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child {
+    margin-left: auto;
+}
+
+
+a {
+    text-decoration: none;
+    color:var(--text-color)
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header, section {
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+    flex: 0 1 34em;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+
+.text-container p {
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.75em 1.25em;
+    border-radius: 0.5em;
+    font-weight: 600;
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+section {
+    padding: 3em min(2em, 15%);
+    background-color: var(--primary-color);
+    text-align: left;
+}
+
+section p {
+    margin-top: 1em;
+    font-size: 1.25rem;
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem;
+}
+
+.chris {
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.projects {
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-3);
+    text-align: left;
+    margin: 0 auto;
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.projects p {
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+.project-pic {
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.section#projects {
+    background-color: var(--color-3);
+}

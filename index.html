@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Ng's Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://github.com/alexng42" target="_blank">GitHub</a>
+            <a
+              href="https://www.linkedin.com/in/alexanderng247/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a href="mailto:alexanderng247@gmail.com" target="_blank"
+              >Email Me</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="flex-container">
+        <img height="700px" width="430px" src="images/irongiant.png" alt="" />
+        <div class="text-container">
+          <h1>Welcome to my website</h1>
+          <p>I'm Alex Ng.</p>
+          <p>I'm a computer engineering student at UBC.</p>
+          <a href="#education" class="cta-button secondary">Education</a>
+          <a href="#projects" class="cta-button secondary">Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="flex-container">
+        <div class="text-container">
+          <h2 id="education">Education</h2>
+          <h3 id="education">University of British Columbia</h3>
+          <p>2025- Present</p>
+          <p>Bachelor of Applied Science - Computer Engineering</p>
+        </div>
+        <img src="images/ubc-logo.png" alt="" class="project-pic" />
+      </div>
+
+      <div class="flex-container">
+        <div class="text-container">
+          <h3 id="education">University of Victoria</h3>
+          <p>2014- 2018</p>
+          <p>Bachelor of Science - Chemistry for the Medical Sciences</p>
+          <a href="#projects" class="cta-button secondary">Projects</a>
+          <a href="#" class="cta-button secondary">Jump to Top</a>
+        </div>
+        <img
+          src="images/509px-University_of_Victoria_Logo_and_Wordmark.png"
+          alt=""
+          class="project-pic"
+        />
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="flex-container">
+        <div class="text-container">
+          <h2 id="projects">Projects</h2>
+          <h3>UBC Schedule Planner</h3>
+          <p>
+            Developed a responsive GUI for course planning application using
+            .NET MAUI and implementing the MVVM architecture.
+          </p>
+          <p>Implemented schedule saving and course conflict prevention.</p>
+        </div>
+        <img src="images/UBCCoursePlanner.png" alt="" class="project-pic" />
+      </div>
+      <div class="flex-container">
+        <div class="text-container">
+          <h3>FPGA Tron Game</h3>
+          <p>
+            Developed a real-time light-cycle Tron game for an Intel DE10-Lite
+            FPGA in C with RISC-V.
+          </p>
+          <p>
+            Implemented low-level collision detection logic by reading pixel
+            colour data directly from the VGA frame buffer to trigger round-over
+            states.
+          </p>
+          <p>
+            Improved system responsiveness by refactoring game engine to utilize
+            interrupt service routines for user input and timer events.
+          </p>
+        </div>
+        <img src="images/211_FPGA_TronGame.png" alt="" class="project-pic" />
+      </div>
+      <div class="flex-container">
+        <div class="text-container">
+          <h3>Line Following Robot</h3>
+          <p>
+            Lead a group of three engineering students to design, program, and
+            test a Pololu 3pi robot to complete an obstacle course.
+          </p>
+          <p>
+            Programmed and optimized a Pololu 3pi line following robot using C
+            with PID control to complete eight different obstacle challenges.
+          </p>
+          <p>
+            Tested and calibrated sensors and motors to ensure our robot
+            performed consistently on competition day.
+          </p>
+          <a href="#education" class="cta-button secondary">Education</a>
+          <a href="#" class="cta-button secondary">Jump to Top</a>
+        </div>
+        <img src="images/linefollowingrobot.png" alt="" class="project-pic" />
+      </div>
+    </section>
+  </body>
+</html>
