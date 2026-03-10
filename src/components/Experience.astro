@@ -13,10 +13,8 @@ const experiences = [
         type: 'Full-time',
         highlight: true,
         bullets: [
-          'Led the Training Optimizations team to land training optimization techniques — including embedding pruning, embedding offloading, and model freshness — saving Meta upwards of $500M per year in compute costs.',
-          'Drove embedding pruning techniques that reduce embedding table sizes by up to 50%, significantly lowering serving and training capacity requirements, saving up to 2 MW of power.',
-          'Drove adoption of embedding offloading across Meta\'s leading recommendation models, enabling frontier-scale training at 100TB by leveraging GPU memory optimization with host memory and SSD tiers.',
-          'Reduced model staleness from ~30 minutes to ~5 minutes for Ads and Recommendation Models.',
+          'Leading training optimization efforts for Meta\'s recommendation models, driving $500M+ in annual compute savings.',
+          'Building embedding pruning, offloading, and model freshness systems enabling frontier-scale training at 100TB.',
           'All techniques contributed upstream to the open-source TorchRec and FBGEMM libraries on PyTorch.',
         ],
         skills: ['Python', 'C++', 'CUDA', 'PyTorch', 'TorchRec', 'FBGEMM'],
@@ -28,9 +26,8 @@ const experiences = [
         location: 'Menlo Park, CA',
         type: 'Full-time',
         bullets: [
-          'Drove the migration of the entire messaging stack from Django (Python) to WWW (Hack).',
+          'Drove the migration of the entire messaging stack from Django to Hack.',
           'Led efficiency initiatives around message rendering resulting in ~1 MW of power savings.',
-          'Built developer tooling that achieved 90% reduction in engineering hours for common workflows.',
         ],
         skills: ['Python', 'Hack', 'Django', 'React'],
       },
@@ -41,9 +38,8 @@ const experiences = [
         location: 'Menlo Park, CA',
         type: 'Full-time',
         bullets: [
-          'Led a company-wide data classification system enforcing safety guardrails at infrastructure scale.',
-          'Built a real-time streaming classification system handling all of Meta\'s inbound and outbound traffic.',
-          'Trained custom ML models to classify free-form user data across billions of records.',
+          'Built a company-wide data classification system enforcing privacy guardrails at infrastructure scale.',
+          'Designed real-time streaming classification handling all of Meta\'s inbound and outbound traffic.',
         ],
         skills: ['Python', 'ML', 'Streaming', 'Data Infra'],
       },
@@ -107,6 +103,7 @@ function getSkillClass(skill: string): string {
 
 <section id="experience" class="py-6 px-6">
   <div class="max-w-5xl mx-auto">
+    <div class="bash-prompt animate"><span class="prompt-symbol">~</span> <span class="prompt-dollar">$</span> history</div>
     <h2 class="section-title animate">Experience</h2>
 
     <div class="relative">

@@ -37,6 +37,18 @@
     @apply text-2xl font-bold tracking-tight text-stone-900 dark:text-stone-50 mb-6 font-mono;
   }
 
+  .bash-prompt {
+    @apply font-mono text-sm text-stone-400 dark:text-stone-500 mb-2;
+  }
+
+  .bash-prompt .prompt-symbol {
+    @apply text-emerald-600 dark:text-emerald-400;
+  }
+
+  .bash-prompt .prompt-dollar {
+    @apply text-stone-500 dark:text-stone-400;
+  }
+
   .glass {
     @apply bg-white/60 dark:bg-stone-900/60 backdrop-blur-xl border border-white/20 dark:border-stone-800/50;
   }
