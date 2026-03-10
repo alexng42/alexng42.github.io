@@ -21,7 +21,7 @@
       <h1 class="animate stagger-2 font-mono">
         <span class="text-stone-500 dark:text-stone-400 text-lg">Hi, I'm </span>
         <span class="block text-4xl sm:text-5xl font-bold tracking-tight text-stone-900 dark:text-stone-50 leading-[1.1] mt-1">
-          Jasper Shan<span class="inline-block w-[3px] h-[0.9em] bg-stone-900 dark:bg-stone-50 ml-1 align-middle animate-blink"></span>
+          <span id="typed-name"></span><span id="cursor" class="inline-block w-[3px] h-[0.9em] bg-stone-900 dark:bg-stone-50 ml-1 align-middle animate-blink"></span>
         </span>
       </h1>
 
@@ -56,3 +56,26 @@
     animation: blink 1s step-end infinite;
   }
 </style>
+
+<script>
+  const name = 'Jasper Shan';
+  const el = document.getElementById('typed-name')!;
+  const cursor = document.getElementById('cursor')!;
+  let i = 0;
+
+  // Pause cursor blink while typing
+  cursor.style.animation = 'none';
+  cursor.style.opacity = '1';
+
+  const delay = 600; // wait for animate fade-in
+  setTimeout(() => {
+    const interval = setInterval(() => {
+      el.textContent = name.slice(0, ++i);
+      if (i === name.length) {
+        clearInterval(interval);
+        // Resume blinking after typing completes
+        cursor.style.animation = '';
+      }
+    }, 75);
+  }, delay);
+</script>
