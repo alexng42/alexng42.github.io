@@ -4,7 +4,6 @@ import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://doIIarplus.github.io',
-  base: '/stshan.github.io',
+  site: 'https://www.jaspershan.com',
   integrations: [react(), tailwind()],
 });
