@@ -1,6 +1,15 @@
 ---
 const projects = [
   {
+    name: 'Memory Chatbot',
+    description: 'Locally-run AI chatbot in Python using Ollama with Llama 3. Features persistent conversation memory, date-based recall, and RAG-powered semantic search across past conversations.',
+    language: 'Python',
+    tags: ['Python', 'Ollama', 'RAG'],
+    year: '2026',
+    org: 'Personal Project',
+    url: 'https://github.com/alexng42/memory-chatbot',
+  },
+  {
     name: 'UBC Course Planner',
     description: 'Responsive GUI course planning application built with .NET MAUI using MVVM architecture. Features schedule saving and course conflict prevention.',
     language: 'C#',
@@ -66,6 +75,7 @@ const projects = [
 ];
  
 const langColors: Record<string, string> = {
+  'Python': 'bg-yellow-500',
   'C#': 'bg-purple-500',
   'C': 'bg-blue-500',
   'HTML': 'bg-orange-500',
