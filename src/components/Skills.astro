@@ -1,43 +1,65 @@
 ---
 const skillCategories = [
   {
-    name: 'Languages',
-    icon: '{ }',
-    skills: ['Java', 'C++', 'C', 'C#', 'Python', 'SystemVerilog', 'RISC-V Assembly', 'Arm64'],
+    name: "Languages",
+    icon: "{ }",
+    skills: [
+      "Java",
+      "C++",
+      "C",
+      "C#",
+      "Python",
+      "JavaScript",
+      "SystemVerilog",
+      "RISC-V Assembly",
+      "Arm64",
+    ],
   },
   {
-    name: 'Software',
-    icon: '⬡',
-    skills: ['Quartus', 'Questa', 'AutoCAD', 'Git', 'Office Suite'],
+    name: "Software",
+    icon: "⬡",
+    skills: ["Quartus", "Questa", "AutoCAD", "Git", "Office Suite"],
   },
   {
-    name: 'Electrical',
-    icon: '⚡',
-    skills: ['Circuit Design', 'Circuit Components', 'Basic Circuit Tools', 'Oscilloscope'],
+    name: "Electrical",
+    icon: "⚡",
+    skills: [
+      "Circuit Design",
+      "Circuit Components",
+      "Basic Circuit Tools",
+      "Oscilloscope",
+    ],
   },
 ];
 ---
- 
+
 <section id="skills" class="py-6 px-6">
   <div class="max-w-5xl mx-auto">
-    <div class="bash-prompt animate"><span class="prompt-symbol">~</span> <span class="prompt-dollar">$</span> cat ~/.skills</div>
+    <div class="bash-prompt animate">
+      <span class="prompt-symbol">~</span>
+      <span class="prompt-dollar">$</span> cat ~/.skills
+    </div>
     <h2 class="section-title animate">Skills</h2>
- 
+
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      {skillCategories.map((category, catIdx) => (
-        <div class={`animate stagger-${catIdx + 1} group rounded-2xl border border-stone-200/60 dark:border-stone-800/60 bg-white dark:bg-stone-900/60 p-5 card-hover`}>
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-4 font-mono">
-            {category.name}
-          </h3>
-          <div class="flex flex-wrap gap-2">
-            {category.skills.map((skill) => (
-              <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-sm font-medium bg-stone-100 text-stone-600 dark:bg-stone-800 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors duration-200 cursor-default">
-                {skill}
-              </span>
-            ))}
+      {
+        skillCategories.map((category, catIdx) => (
+          <div
+            class={`animate stagger-${catIdx + 1} group rounded-2xl border border-stone-200/60 dark:border-stone-800/60 bg-white dark:bg-stone-900/60 p-5 card-hover`}
+          >
+            <h3 class="text-xs font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-4 font-mono">
+              {category.name}
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {category.skills.map((skill) => (
+                <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-sm font-medium bg-stone-100 text-stone-600 dark:bg-stone-800 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors duration-200 cursor-default">
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </section>
