@@ -1,83 +1,23 @@
 ---
 const experiences = [
   {
-    company: 'Meta',
-    logoBg: 'bg-[#0668E1]',
-    logoSvg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white"><path fill-rule="evenodd" d="M8.217 5.243C9.145 3.988 10.171 3 11.483 3 13.96 3 16 6.153 16.001 9.907c0 2.29-.986 3.725-2.757 3.725-1.543 0-2.395-.866-3.924-3.424l-.667-1.123-.118-.197a55 55 0 0 0-.53-.877l-1.178 2.08c-1.673 2.925-2.615 3.541-3.923 3.541C1.086 13.632 0 12.217 0 9.973 0 6.388 1.995 3 4.598 3q.477-.001.924.122c.31.086.611.22.913.407.577.359 1.154.915 1.782 1.714m1.516 2.224q-.378-.615-.727-1.133L9 6.326c.845-1.305 1.543-1.954 2.372-1.954 1.723 0 3.102 2.537 3.102 5.653 0 1.188-.39 1.877-1.195 1.877-.773 0-1.142-.51-2.61-2.87zM4.846 4.756c.725.1 1.385.634 2.34 2.001A212 212 0 0 0 5.551 9.3c-1.357 2.126-1.826 2.603-2.581 2.603-.777 0-1.24-.682-1.24-1.9 0-2.602 1.298-5.264 2.846-5.264q.137 0 .27.018"/></svg>',
+    company: 'UBC Department of Electrical and Computer Engineering',
+    logoBg: 'bg-indigo-700',
+    logoSvg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h6v6H9zM9 1v4m6-4v4M9 19v4m6-4v4M1 9h4m-4 6h4m14-6h4m-4 6h4"/></svg>',
     roles: [
       {
-        title: 'Senior Software Engineer',
-        team: 'Training Optimizations, TorchRec',
-        period: 'Jul 2023 - Present',
-        location: 'Menlo Park, CA',
-        type: 'Full-time',
+        title: 'Embedded Systems & IoT Engineering Co-op',
+        team: 'Canadian Coast Guard Project',
+        period: 'Sept 2026 - Present',
+        location: 'Vancouver, British Columbia',
+        type: 'Co-op',
         highlight: true,
         bullets: [
-          'Leading training optimization efforts for Meta\'s recommendation models, driving $250M+ in annual compute savings.',
-          'Building embedding pruning, offloading, and model freshness systems enabling frontier-scale training at 100TB.',
-          'All techniques contributed upstream to the open-source TorchRec and FBGEMM libraries on PyTorch.',
+          'Designed and implemented a canonical gateway data model and SQLite persistence layer in Python for an edge-computing communications gateway, including measurement normalization and structured invalid-record rejection, validated by 20 passing automated unit and integration tests.',
+          'Built a local FastAPI dashboard and read-only status API that serves live sensor data with no cloud or app dependency, covering latest-record retrieval, data freshness, and upload-pending state, validated by 45 passing automated tests.',
+          "Brought up the project's embedded Linux compute module from scratch, including OS installation, Wi-Fi and Bluetooth configuration, and a custom temperature-monitoring script to support ongoing hardware testing.",
         ],
-        skills: ['Python', 'C++', 'CUDA', 'PyTorch', 'TorchRec', 'FBGEMM'],
-      },
-      {
-        title: 'Software Engineer',
-        team: 'Messenger & Instagram Direct',
-        period: 'Feb 2021 - Jul 2023',
-        location: 'Menlo Park, CA',
-        type: 'Full-time',
-        bullets: [
-          'Drove the migration of the entire messaging stack from Django to Hack.',
-          'Led efficiency initiatives around message rendering resulting in ~1 MW of power savings.',
-        ],
-        skills: ['Python', 'Hack', 'Django', 'React'],
-      },
-      {
-        title: 'Software Engineer',
-        team: 'Privacy Infrastructure',
-        period: 'Jan 2019 - Feb 2021',
-        location: 'Menlo Park, CA',
-        type: 'Full-time',
-        bullets: [
-          'Built a company-wide data classification system enforcing privacy guardrails at infrastructure scale.',
-          'Designed real-time streaming classification handling all of Meta\'s inbound and outbound traffic.',
-        ],
-        skills: ['Python', 'ML', 'Streaming', 'Data Infra'],
-      },
-    ],
-  },
-  {
-    company: 'Facebook',
-    logoBg: 'bg-[#1877F2]',
-    logoSvg: '<svg viewBox="0 0 36 36" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M20.18 21.75h4.38l.69-4.5h-5.07V14.7c0-1.23.6-2.43 2.54-2.43h1.96V8.28s-1.78-.3-3.48-.3c-3.55 0-5.87 2.15-5.87 6.04v3.23H10.8v4.5h4.53V33.6a18.1 18.1 0 005.58 0V21.75z"/></svg>',
-    roles: [
-      {
-        title: 'SWE Intern',
-        team: 'Instagram Privacy & Security',
-        period: 'Jan 2018 - Apr 2018',
-        location: 'Menlo Park, CA',
-        type: 'Internship',
-        bullets: [
-          'Built an Audience Control framework for specifying custom audiences across Instagram interactions and content types.',
-        ],
-        skills: ['Python', 'iOS', 'Privacy'],
-      },
-    ],
-  },
-  {
-    company: 'Amazon',
-    logoBg: 'bg-[#232F3E]',
-    logoSvg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white"><path d="M10.813 11.968c.157.083.36.074.5-.05l.005.005a90 90 0 0 1 1.623-1.405c.173-.143.143-.372.006-.563l-.125-.17c-.345-.465-.673-.906-.673-1.791v-3.3l.001-.335c.008-1.265.014-2.421-.933-3.305C10.404.274 9.06 0 8.03 0 6.017 0 3.77.75 3.296 3.24c-.047.264.143.404.316.443l2.054.22c.19-.009.33-.196.366-.387.176-.857.896-1.271 1.703-1.271.435 0 .929.16 1.188.55.264.39.26.91.257 1.376v.432q-.3.033-.621.065c-1.113.114-2.397.246-3.36.67C3.873 5.91 2.94 7.08 2.94 8.798c0 2.2 1.387 3.298 3.168 3.298 1.506 0 2.328-.354 3.489-1.54l.167.246c.274.405.456.675 1.047 1.166ZM6.03 8.431C6.03 6.627 7.647 6.3 9.177 6.3v.57c.001.776.002 1.434-.396 2.133-.336.595-.87.961-1.465.961-.812 0-1.286-.619-1.286-1.533M.435 12.174c2.629 1.603 6.698 4.084 13.183.997.28-.116.475.078.199.431C13.538 13.96 11.312 16 7.57 16 3.832 16 .968 13.446.094 12.386c-.24-.275.036-.4.199-.299z"/><path d="M13.828 11.943c.567-.07 1.468-.027 1.645.204.135.176-.004.966-.233 1.533-.23.563-.572.961-.762 1.115s-.333.094-.23-.137c.105-.23.684-1.663.455-1.963-.213-.278-1.177-.177-1.625-.13l-.09.009q-.142.013-.233.024c-.193.021-.245.027-.274-.032-.074-.209.779-.556 1.347-.623"/></svg>',
-    roles: [
-      {
-        title: 'SWE Intern',
-        team: 'AWS Lambda',
-        period: 'May 2017 - Dec 2017',
-        location: 'Seattle, WA',
-        type: 'Internship',
-        bullets: [
-          'Implemented Optimistic Concurrency Control for AWS Lambda API, guaranteeing consistency of function update transactions.',
-        ],
-        skills: ['Java', 'AWS', 'Distributed Systems'],
+        skills: ['Python', 'SQLite', 'FastAPI', 'Embedded Linux', 'IoT'],
       },
     ],
   },
@@ -85,15 +25,10 @@ const experiences = [
 
 const skillColors: Record<string, string> = {
   'Python': 'bg-blue-100/80 text-blue-700 dark:bg-blue-500/10 dark:text-blue-300 border-blue-200/50 dark:border-blue-500/20',
-  'C++': 'bg-purple-100/80 text-purple-700 dark:bg-purple-500/10 dark:text-purple-300 border-purple-200/50 dark:border-purple-500/20',
-  'CUDA': 'bg-green-100/80 text-green-700 dark:bg-green-500/10 dark:text-green-300 border-green-200/50 dark:border-green-500/20',
-  'PyTorch': 'bg-red-100/80 text-red-700 dark:bg-red-500/10 dark:text-red-300 border-red-200/50 dark:border-red-500/20',
-  'TorchRec': 'bg-orange-100/80 text-orange-700 dark:bg-orange-500/10 dark:text-orange-300 border-orange-200/50 dark:border-orange-500/20',
-  'FBGEMM': 'bg-amber-100/80 text-amber-700 dark:bg-amber-500/10 dark:text-amber-300 border-amber-200/50 dark:border-amber-500/20',
-  'Java': 'bg-red-100/80 text-red-700 dark:bg-red-500/10 dark:text-red-300 border-red-200/50 dark:border-red-500/20',
-  'AWS': 'bg-yellow-100/80 text-yellow-700 dark:bg-yellow-500/10 dark:text-yellow-300 border-yellow-200/50 dark:border-yellow-500/20',
-  'React': 'bg-cyan-100/80 text-cyan-700 dark:bg-cyan-500/10 dark:text-cyan-300 border-cyan-200/50 dark:border-cyan-500/20',
-  'ML': 'bg-violet-100/80 text-violet-700 dark:bg-violet-500/10 dark:text-violet-300 border-violet-200/50 dark:border-violet-500/20',
+  'SQLite': 'bg-purple-100/80 text-purple-700 dark:bg-purple-500/10 dark:text-purple-300 border-purple-200/50 dark:border-purple-500/20',
+  'FastAPI': 'bg-green-100/80 text-green-700 dark:bg-green-500/10 dark:text-green-300 border-green-200/50 dark:border-green-500/20',
+  'Embedded Linux': 'bg-orange-100/80 text-orange-700 dark:bg-orange-500/10 dark:text-orange-300 border-orange-200/50 dark:border-orange-500/20',
+  'IoT': 'bg-cyan-100/80 text-cyan-700 dark:bg-cyan-500/10 dark:text-cyan-300 border-cyan-200/50 dark:border-cyan-500/20',
 };
 
 function getSkillClass(skill: string): string {
